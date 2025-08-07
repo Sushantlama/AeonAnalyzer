@@ -26,27 +26,16 @@ This project lets CAT aspirants and critical readers paste Aeon essay URLs and r
 ```
 ├── backend
 │   ├── main.py               # FastAPI backend server
-│   ├── utils.py              # Text cleaning and helper functions
-│   └── gemini.py             # Gemini API interaction
+│   ├── ai_analysis.py              # for ai analysis
+│   └── scrapper.py             # scrapping the essay data from the url
+|   └──requirements.txt       # Python dependencies
 ├── frontend
 │   ├── index.html            # Main HTML interface
+│   ├── essay.html            # Essay HTML interface
 │   ├── script.js             # JavaScript to interact with backend
 │   └── style.css             # Styling
-├── requirements.txt          # Python dependencies
-├── .env                      # API keys and config (not committed)
 ├── README.md                 # Project documentation
-└── render.yaml               # (Optional) Render deployment config
 ```
-
----
-
-## 👥 Contributions
-
-Pull requests are welcome. Please:
-
-* Follow PEP8 for Python
-* Keep frontend files under `/frontend`
-* Document any new API routes
 
 ---
 
@@ -61,7 +50,6 @@ Pull requests are welcome. Please:
 ## ⚖️ Ethical Use
 
 * This app is meant **strictly for personal academic use**
-* Do **not** scrape, republish, or store Aeon content beyond personal device
 * Gemini API usage is limited to **free quota**, so use responsibly
 
 ---
@@ -77,4 +65,4 @@ This project aims to:
 
 ---
 
-Built with ❤️ for serious learners.
+
