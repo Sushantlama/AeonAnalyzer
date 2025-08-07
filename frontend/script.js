@@ -116,7 +116,7 @@ function goToEssayPage() {
     return;
   }
 
-  window.location.href = `/frontend/essay.html?url=${encodeURIComponent(url)}`;
+  window.location.href = `/essay.html?url=${encodeURIComponent(url)}`;
 }
 
 /**
@@ -133,4 +133,5 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
 
