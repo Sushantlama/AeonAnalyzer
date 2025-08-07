@@ -1,0 +1,35 @@
+<!-- index.html (Landing Page for Link Input) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AeonAI | Paste Essay Link</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/frontend/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">AeonAI</div>
+    </div>
+  </nav>
+
+  <div class="app-container" style="display: flex; justify-content: center; align-items: center; height: 70vh;">
+    <div class="input-area" style="text-align: center;">
+      <h2>Paste an Aeon Essay URL</h2>
+      <input 
+        type="text" 
+        id="urlInput" 
+        placeholder="e.g. https://aeon.co/essays/..." 
+        style="width: 400px; padding: 0.6rem; font-size: 1rem; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 10px;" 
+      />
+      <br>
+      <button onclick="goToEssayPage()" class="primary-btn" style="padding: 0.6rem 1.2rem; font-size: 1rem; background-color: #f5a623; border: none; border-radius: 6px; color: white; cursor: pointer; margin-top: 10px;">Fetch Essay</button>
+    </div>
+  </div>
+
+  <script src="/frontend/script.js"></script>
+</body>
+</html>

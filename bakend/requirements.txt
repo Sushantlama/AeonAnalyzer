@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+feedparser
+beautifulsoup4
+requests
+python-dotenv
+google-generativeai>=0.5.2

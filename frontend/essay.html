@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AeonAI | Essay View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/frontend/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-container flex justify-between items-center px-6 py-3 bg-white shadow">
+    
+    <!-- Left: Logo -->
+    <div class="logo text-xl font-bold text-gray-800">AeonAI</div>
+
+  </div>
+</nav>
+
+
+
+  <main class="essay-page">
+    <!-- Left: Essay Content -->
+    <!-- Left: Essay Content -->
+    <section class="essay-panel" id="essay-section">
+      <div id="essay-meta">
+        <h1 id="essay-title">Loading title...</h1>
+        <h2 id="essay-subheading">Loading subheading...</h2>
+        <p id="essay-author" class="essay-author">Loading author...</p>
+      </div>
+      <div id="essay-content">
+        <p>Loading essay content...</p>
+      </div>
+    </section>
+
+
+    <!-- Right: AI Analysis Panel -->
+    <aside class="ai-panel">
+      <h2>AI Insights</h2>
+      <p>This section will show AI-generated summary, tone, and other insights.</p>
+      <button id="analyzeBtn" class="btn primary-btn">Run AI Analysis</button>
+      <div class="ai-output"></div>
+    </aside>
+  </main>
+
+  <script src="/frontend/script.js"></script>
+</body>
+</html>
