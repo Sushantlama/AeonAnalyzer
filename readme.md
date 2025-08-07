@@ -20,6 +20,15 @@ This project lets CAT aspirants and critical readers paste Aeon essay URLs and r
 * 🔍 Responsive layout for desktop and mobile
 
 ---
+## Screenshots
+
+### Landing Page
+<img width="959" height="410" alt="image" src="https://github.com/user-attachments/assets/7c206968-ace3-4528-b82f-e18f0e448a5a" />
+
+### Essay Page
+<img src="assets/1st.png" alt="Screenshot" width="600">
+<img src="assets/2nd.png" alt="Screenshot" width="600">
+
 
 ## 📁 Project Structure
 
@@ -64,5 +73,6 @@ This project aims to:
 * Help CAT aspirants build stamina, reading speed, and interpretative skills
 
 ---
+
 
 
