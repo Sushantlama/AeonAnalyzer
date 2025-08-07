@@ -1,3 +1,6 @@
+
+const BASE_URL = "https://aeonanalyzer.onrender.com";
+
 /**
  * Extracts the essay URL from the query string.
  * @returns {string|null}
@@ -24,7 +27,8 @@ async function fetchEssay() {
   }
 
   try {
-    const response = await fetch(`http://127.0.0.1:8000/essay-content?url=${encodeURIComponent(url)}`);
+    
+    const response = await fetch(`${BASE_URL}/essay-content?url=${encodeURIComponent(url)}`);
     if (!response.ok) throw new Error("Failed to fetch essay content.");
     
     const data = await response.json();
@@ -53,7 +57,7 @@ async function fetchAIAnalysis() {
   analyzeBtn.textContent = "Analyzing...";
 
   try {
-    const response = await fetch(`http://127.0.0.1:8000/analyze-essay?url=${encodeURIComponent(url)}`);
+    const response = await fetch(`${BASE_URL}/analyze-essay?url=${encodeURIComponent(url)}`);
     const analysis = await response.json();
 
     if (!response.ok || analysis.error || !analysis) {
@@ -129,3 +133,4 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
